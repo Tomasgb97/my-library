@@ -24,8 +24,11 @@
             <input type="text" id="author" name="author" placeholder="Name of the author"><br>
         <label id="pageslabel" for="pages">Pages:</label><br>
             <input type="number" id="pages" name="pages" placeholder="Number of pages you had read so far"><br>
-        <label id="readlabel" for="read">Have you read it already?</label><br>
-            <input type="checkbox" id="read" name="read" value=""><br>
+        <label id="readlabel" for="read">Have you finished it already?</label><br>
+            <select  id="read" name="read">
+                <option value = 'YES'>YES</option>
+                <option value="NO">NO</option>
+            </select><br>
         <input id="submit" type="submit" value="Submit Book">
         </div>
         </div>

@@ -86,7 +86,23 @@ function forDisplay(){     //on every run, deletes displayed elements and genera
         bookinfo.classList.add('bookInfo');
         bookinfo.innerHTML =`<p class= "ondisplaytext" >Title: ${element.title}<br> Author: ${element.author}<br> Pages ${element.pages}<br>
         Finished ? : ${element.read} <p>`;
+
+
+
+        book.setAttribute('data-index', `${myLibrary.indexOf(element)}`);
         book.appendChild(bookinfo);
+        
+        book.addEventListener('dblclick', function(){
+            
+            let index = this.getAttribute('data-index');
+
+            myLibrary.splice(index, 1);
+            
+            this.remove();
+            return forDisplay();
+
+        })
+        
         titleInput.value = "";
         author.value = "";
         pages.value = "";
