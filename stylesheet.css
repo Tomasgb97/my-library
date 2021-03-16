@@ -1,0 +1,213 @@
+#form{
+
+    background-color: #E5E5F7;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #E5E5F7 20%, #E5E5F7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #E5E5F7 20%, #E5E5F7 80%, transparent 80%, transparent) 80px 80px, linear-gradient(#0713fa30 6.4px, transparent 6.4px) 0 -3.2px, linear-gradient(90deg, #0713fa00 6.4px, #E5E5F7 6.4px) -3.2px 0;
+    background-size: 160px 160px, 160px 160px, 80px 80px, 80px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "add-book-form add-book-form add-book-form add-book-form"
+    "title-label title-label title-label title-label"
+    "title-input title-input title-input title-input"
+    "author-label author-label author-label author-label"
+    "author-input author-input author-input author-input"
+    "pages-label pages-label pages-label pages-label"
+    "pages-input pages-input pages-input pages-input"
+    "readit-label readit-label readit-label readit-label"
+    "readit-input readit-input readit-input readit-input";
+
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+    border-radius: 30px;
+    height: 96%;
+    box-shadow: -1px 14px 25px -2px rgba(71,71,71,0.47);
+    overflow: hidden;
+}
+body{
+    margin: 0;
+}
+#formtit{
+    grid-area: add-book-form;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 13vw;
+    width: inherit;
+    font-size: 4vw;
+    background-color: #45454f;
+    
+}
+#titlelabel{
+    grid-area: title-label;
+    padding-left: 45%;
+    font-size: 1.53vw;
+}
+
+#title{
+    grid-area: title-input;
+    border-radius: 20px;
+    width: 47vw;
+    height: 2vw;
+    box-shadow: -1px 3px 14px -2px rgb(71 71 71 / 47%);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#authorlabel{
+    grid-area: author-label;
+    padding-left: 45%;
+    font-size: 1.5vw;
+}
+#author{
+
+    grid-area: author-input;
+    border-radius: 20px;
+    width: 47vw;
+    height: 2vw;
+    box-shadow: -1px 3px 14px -2px rgb(71 71 71 / 47%);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#pageslabel{
+
+    grid-area: pages-label;
+    padding-left: 45%;
+    font-size: 1.5vw;
+}
+#pages{
+
+    grid-area: pages-input;
+    border-radius: 20px;
+    width: 47vw;
+    height: 2vw;
+    box-shadow: -1px 3px 14px -2px rgb(71 71 71 / 47%);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#readlabel{
+
+    grid-area: readit-label;
+    padding-left: 37%;
+    font-size: 1.5vw;
+    
+}
+#read{
+
+    grid-area: readit-input;
+    margin-left: 45%;
+    height: 12%;
+    width: 12%;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+#submit{
+
+    grid-area: submit-button;
+    grid-area: submit-button;
+    position: absolute;
+    left: 40%;
+    top: 80%;
+    height: 10%;
+    width: 20%;
+    border-radius: 20px;
+}
+#iconclose{
+    position: absolute;
+    padding-left: 94%;
+    padding-top: 1%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr 1.1fr 1fr;
+    grid-template-rows: 0.4fr 1.6fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Nav Header Header Header"
+      "Nav Container Container Container"
+      "Nav Container Container Container";
+      height: 100%;
+      width: 100%;
+      position: fixed;
+  }
+  #newbook{
+
+    background-color: #9797fa;
+    width: 80%;
+    height: 10%;
+    position: relative;
+    left: 10%;
+    top: 3%;
+    border-radius: 10px;
+    box-shadow: 3px 9px 23px -14px rgb(0 0 0 / 75%);
+    backdrop-filter: blur(100px);
+  }
+  .Nav { 
+    grid-area: Nav;
+    background-color: #5757f79e;}
+  .Header { 
+    grid-area: Header;
+    background-color: #00000eba;}
+  .Container { 
+    grid-area: Container;
+    background-color: #2b64e27d;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.onDisplay{
+
+        width: 15%;
+        height: 40%;
+        background-color: white;
+        border-radius: 10px;
+        margin: 5%;
+        background-image: url(images/book-icon-hd.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #2c48c8;
+        border: 2px inset white;
+        display: flex;
+        justify-content: end;
+        box-shadow: -5px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.ondisplaytext{
+    position: relative;
+}
+.bookInfo{
+
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    position: relative;
+    top: 70%;
+    overflow: auto;
+    border-radius: 3px;
+}
+
+#title:focus, #author:focus, #pages:focus,
+#newbook:focus, #submit:focus{
+
+    outline: none;
+}
+.bookInfo::-webkit-scrollbar{
+    background-color: #00000012;
+    border-radius: 10px;
+}
+.bookInfo::-webkit-scrollbar-thumb{
+    background-color: #00000012;
+    border-radius:  10px;
+}
+.Container::-webkit-scrollbar{
+
+    background-color: #0000004a
+  }
+  .Container::-webkit-scrollbar-thumb{
+  
+    background-color: #00000066;
+    border-radius: 10px;
+    border: 2px inset #f7f7f773
+  
+  }

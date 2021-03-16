@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library2</title>
+    
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<div class="grid-container">
+    <body>
+    <div class="Nav">
+        <button id="newbook" >Add newbook</button>
+    </div>
+    <div class="Header"></div>
+    <div id="container" class="Container">
+    <div style="display: none;" id="form">
+        <img id="iconclose" src="images/bx-window-close.svg">
+        <h2 id="formtit" >Add new book</h2>
+        <label id="titlelabel" for="title">Title:</label><br>
+            <input type="text" id="title" name="title" placeholder="Name of the book">
+        <label id="authorlabel" for="author">Author:</label><br>
+            <input type="text" id="author" name="author" placeholder="Name of the author"><br>
+        <label id="pageslabel" for="pages">Pages:</label><br>
+            <input type="number" id="pages" name="pages" placeholder="Number of pages you had read so far"><br>
+        <label id="readlabel" for="read">Have you read it already?</label><br>
+            <input type="checkbox" id="read" name="read" value=""><br>
+        <input id="submit" type="submit" value="Submit Book">
+        </div>
+        </div>
+    <script defer src="script.js"></script>
+    </body>
+</div>
+</html>
