@@ -22,14 +22,16 @@ newBook.addEventListener('click', function(){  //button that opens input form, a
 
 iconclose.addEventListener('click', function(){   //closing form icon. shows hidden elements of container
 
-    let bookshow = document.querySelectorAll('.bookInfo');
-        bookshow.forEach(element => element.hidden = false)
-
     form.style.display = 'none';
     newBook.hidden = false;
 })
 
+
+
 submitBook.addEventListener('click',addBook);   //submits the book for showing and display on container
+
+
+
 
 function addBook(){                           //if title and author are there adds book to the library array and calls display func.
 
@@ -38,14 +40,14 @@ function addBook(){                           //if title and author are there ad
         alert('Please, introduce at least Title and Author of the book')
         
     }else{
-        
-        
-
+            
     let newObject = nuevo();
+
 
     form.style.display = 'none';
     newBook.hidden = false;
     alert('YOUR BOOK WAS ADDED TO YOUR LIBRARY !')
+
 
     myLibrary.push(newObject);
 
@@ -71,11 +73,8 @@ function nuevo(){        //object creator for books.
 function forDisplay(){     //on every run, deletes displayed elements and generate the newones.
 
     let elements = document.querySelectorAll('.onDisplay');
-
     elements.forEach(element => element.remove());
 
-    //let bookshow = document.querySelectorAll('.bookInfo');
-    //bookshow.forEach(element => element.hidden = 'true');
 
 
     myLibrary.forEach(function(element){
@@ -95,7 +94,6 @@ function forDisplay(){     //on every run, deletes displayed elements and genera
         book.addEventListener('dblclick', function(){
             
             let index = this.getAttribute('data-index');
-
             myLibrary.splice(index, 1);
             
             this.remove();
