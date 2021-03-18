@@ -83,13 +83,22 @@ function forDisplay(){     //on every run, deletes displayed elements and genera
         book.classList.add('onDisplay');
         let bookinfo = document.createElement('div');
         bookinfo.classList.add('bookInfo');
-        bookinfo.innerHTML =`<p class= "ondisplaytext" >Title: ${element.title}<br> Author: ${element.author}<br> Pages ${element.pages}<br>
-        Finished ? : ${element.read} <p>`;
 
+        let finished = document.createElement('div');
+        if(element.read == 'YES'){
+            finished.classList.add('finishedyes');
+        }else{ finished.classList.add('finishedno')};
+        
+        
 
+        bookinfo.innerHTML =`<p class= "ondisplaytext" >Title: ${element.title}<br> Author: ${element.author}<br> Pages ${element.pages}<br></p>`;
+
+        bookinfo.appendChild(finished);
 
         book.setAttribute('data-index', `${myLibrary.indexOf(element)}`);
         book.appendChild(bookinfo);
+
+        bookinfo.setAttribute('data-index', book.getAttribute('data-index'));
         
         book.addEventListener('dblclick', function(){
             
@@ -98,6 +107,21 @@ function forDisplay(){     //on every run, deletes displayed elements and genera
             
             this.remove();
             return forDisplay();
+
+        })
+
+        finished.addEventListener('click', function(){
+
+            finished.classList.toggle('finishedyes');
+            finished.classList.toggle('finishedno');
+            let index = this.parentNode.getAttribute('data-index');
+
+            let target = myLibrary[index];
+
+            if(target.read == 'YES'){
+
+               return target.read = 'NO';
+            }else{  return target.read = 'YES'};
 
         })
         

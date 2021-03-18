@@ -236,6 +236,28 @@ body{
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 7px;
 }
+.finishedno{
+
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    position: sticky;
+    left: 90%;
+    top: 0px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+.finishedyes{
+
+    background-color: rgb(0, 255, 13);
+    width: 15px;
+    height: 15px;
+    position: sticky;
+    left: 90%;
+    top: 0px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
 
 #title:focus, #author:focus, #pages:focus,
 #newbook:focus, #submit:focus{
