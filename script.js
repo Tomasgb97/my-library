@@ -91,7 +91,7 @@ function forDisplay(){     //on every run, deletes displayed elements and genera
         
         
 
-        bookinfo.innerHTML =`<p class= "ondisplaytext" >Title: ${element.title}<br> Author: ${element.author}<br> Pages ${element.pages}<br></p>`;
+        bookinfo.innerHTML =`<p class= "ondisplaytext" ><strong>Title: </strong>${element.title}<br><strong> Author: </strong>${element.author}<br> <strong>Pages: </strong> ${element.pages}<br></p>`;
 
         bookinfo.appendChild(finished);
 

@@ -222,7 +222,7 @@ body{
 }
 .ondisplaytext{
     position: relative;
-    text-shadow: -13px 7px 3px #00000042;
+    text-shadow: -13px 7px 6px #00000042;
     font-family: newfont;
 }
 .bookInfo{
