@@ -12,27 +12,52 @@
     <body>
     <div class="Nav">
         <button id="newbook" >Add newbook</button>
-        <div id="divisor1">
-            <h2 id="instructions" >INSTRUCTIONS</h2>
+            <div id="divisor1">
+                    <h2 id="instructions" >INSTRUCTIONS</h2>
+            <div>
+                 <ul class="instrucdiv">
+                     <li>
+                         <strong>BOOK: </strong> To add a new book to your library press the 'add' button on the top left corner.<br>
+                         Complete the form with the <em>Title, Author,</em> and <em>Pages</em> submit it and you'll see it right away!
+                     </li>
+                     <li>
+                         <strong>DELETE:</strong> Double click/tap a book to remove it from your collection
+                     </li>
+                     <li>
+                         <strong>FINISHED: </strong> You can toggle the state of your books after you add them with the small circle located on the bottom right corner of each one of them<br>
+                         <li>
+                             <strong>RED CIRCLE</strong> means you haven't finished it yet.
+                         </li>
+                         <li>
+                             <strong>GREEN CIRCLE</strong> means you are done with it.
+                         </li>
+                     </li>
+                 </ul>
+             </div>
         </div>
     </div>
     <div class="Header"></div>
     <div id="container" class="Container">
     <div style="display: none;" id="form">
-        <img id="iconclose" src="images/bx-window-close.svg">
-        <h2 id="formtit" >Add new book</h2>
-        <label id="titlelabel" for="title">Title:</label><br>
-            <input type="text" id="title" name="title" placeholder="Name of the book">
-        <label id="authorlabel" for="author">Author:</label><br>
-            <input type="text" id="author" name="author" placeholder="Name of the author"><br>
-        <label id="pageslabel" for="pages">Pages:</label><br>
-            <input type="number" id="pages" name="pages" placeholder="Number of pages the book has"><br>
-        <label id="readlabel" for="read">Have you finished it already?</label><br>
-            <select  id="read" name="read">
-                <option value = 'YES'>YES</option>
-                <option value="NO">NO</option>
-            </select><br>
-        <input id="submit" type="submit" value="Submit Book">
+                    <img id="iconclose" src="images/bx-window-close.svg">
+            <h2 id="formtit" >Add new book</h2>
+                <label id="titlelabel" for="title">Title:</label><br>
+                    <input type="text" id="title" name="title" placeholder="Name of the book">
+
+                <label id="authorlabel" for="author">Author:</label><br>
+                    <input type="text" id="author" name="author" placeholder="Name of the author"><br>
+
+                <label id="pageslabel" for="pages">Pages:</label><br>
+                    <input type="number" id="pages" name="pages" placeholder="Number of pages the book has"><br>
+
+                <label id="readlabel" for="read">Have you finished it already?</label><br>
+
+                    <select  id="read" name="read">
+                        <option value = 'YES'>YES</option>
+                        <option value="NO">NO</option>
+                    </select><br>
+
+                <input id="submit" type="submit" value="Submit Book">
         </div>
         </div>
     <script  defer src="script.js"></script>

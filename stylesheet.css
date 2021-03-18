@@ -154,6 +154,18 @@ body{
     left: .4vw;
     font-size: 2.5vw
 }
+.instrucdiv{
+
+    border: 2px solid grey;
+    height: 60vh;
+    background-color: #45454f4a;
+    padding-left: 20px;
+    font-size: 1.8vh;
+    overflow: overlay;
+}
+li{
+    margin-bottom: 10%;
+}
 
 .grid-container {
     display: grid;
@@ -180,6 +192,7 @@ body{
     border-radius: 10px;
     box-shadow: 3px 9px 23px -14px rgb(0 0 0 / 75%);
     backdrop-filter: blur(100px);
+    font-family: newfont;
   }
   #newbook:hover{
 
@@ -193,13 +206,14 @@ body{
   }
   .Nav { 
     grid-area: Nav;
-    background-color: #5757f79e;}
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(141,41,228,0.7203256302521008) 100%);
+    font-family: monospace;}
   .Header { 
     grid-area: Header;
     background-color: #00000eba;}
   .Container { 
     grid-area: Container;
-    background-color: #2b64e27d;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(141,41,228,0.7203256302521008) 100%);
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
@@ -362,6 +376,15 @@ body{
     #formtit{
 
         padding-left: 80px;
+    }
+
+    .grid-container{
+
+        grid-template-columns: 2fr 1fr 1.1fr
+    }
+    .instrucdiv{
+
+        width: 180% ;
     }
 
 }
