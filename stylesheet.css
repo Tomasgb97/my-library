@@ -5,6 +5,8 @@
 }
 
 
+
+
 #form{
 
     background-color: #e5e5f7c5;
@@ -31,6 +33,7 @@
     height: 96%;
     box-shadow: -1px 14px 25px -2px rgba(71,71,71,0.47);
     overflow: hidden;
+    transition: 0.5s;
 }
 body{
     margin: 0;
@@ -178,6 +181,16 @@ body{
     box-shadow: 3px 9px 23px -14px rgb(0 0 0 / 75%);
     backdrop-filter: blur(100px);
   }
+  #newbook:hover{
+
+    transform: scale(1.2);
+    transition: 1.2s;
+  }
+  #newbook:focus{
+
+    transform: scale(0.9);
+    transition: 0.7s;
+  }
   .Nav { 
     grid-area: Nav;
     background-color: #5757f79e;}
@@ -248,3 +261,85 @@ body{
     border: 2px inset #f7f7f773
   
   }
+  @media all and (max-width: 500px){
+
+    .onDisplay{
+        width: 150px;
+        height: 200px;
+        background-size: contain;
+        background-position-y: 0px;
+        background-color: #f7f7f7;
+    }
+
+    #form{
+
+        width: 260px;
+        height: 290px;
+    }
+    #iconclose{
+        position: absolute;
+        padding-left: 220px;
+        padding-top: 10px;
+        height: 20px;
+        width: 40px;
+    
+    }
+    #pageslabel{
+        padding-left: 110px;
+        font-size: 17px;
+    
+    }
+
+    #titlelabel{
+
+        font-size: 17px;
+        padding-left: 110px;
+
+    }
+    #authorlabel{
+
+        font-size: 17px;
+        padding-left: 110px;
+    }
+    #readlabel{
+
+        font-size: 17px;
+        padding-left: 45px;
+    }
+    #submit{
+
+    left: 100px;
+    top: 250px;
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    font-size: 8px;
+    }
+    #read{
+
+    margin-left: 105px;
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 8px;
+    top: 12px;
+    position: relative;
+    }
+    #title{
+
+        width: 250px;
+    }
+    #author{
+
+        width: 250px;
+    }
+    #pages{
+
+        width: 250px;
+    }
+    #formtit{
+
+        padding-left: 80px;
+    }
+
+}
