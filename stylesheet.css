@@ -272,6 +272,81 @@ li{
     border-radius: 100%;
     border: 2px solid black;
 }
+.profilepic{
+
+    position: relative;
+    border-radius: 50px;
+    width: 64px;
+    border: 2px solid white;
+    top: 16px;
+    margin-left: 2%;
+}
+#loginbutton{
+
+    position: relative;
+    width: 155px;
+    left: 86%;
+    background-size: 200px 90px;
+    height: 36px;
+    top: 68%;
+    background-image: url(images/Google-Sign-In.png);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-position-x: -21px;
+    border: none;
+    border-radius: 3px;
+    filter: opacity(0.8);
+}
+#loginbutton:hover{
+
+    transform: scale(1.1);
+    transition: 0.4s;
+    filter: opacity(1);
+}
+#loginbutton:focus{
+
+    
+    outline: none;
+    
+}
+#loginbutton:active{
+    transform: scale(0.9);
+    transition: 0.4s;
+    filter: opacity(1);
+}
+
+#logoutbutton{
+    top: 16px;
+    left: 90%;
+    height: 36px;
+    width: 137px;
+    background-color: #5490fd;
+    border: none;
+    position: relative;
+    border-radius: 3px;
+    font-family: sans-serif;
+    color: white;
+    font-size: large;
+}
+
+#userdetails{
+
+    position: relative;
+    text-align: end;
+    margin-right: 3%;
+    top: 1px;
+    font-size: large;
+    color: white;
+    font-family: system-ui;
+}
+
+#loggedout{
+
+    position: relative;
+     top: 84px;
+     display: block;
+}
+
 
 #title:focus, #author:focus, #pages:focus,
 #newbook:focus, #submit:focus{
@@ -386,6 +461,39 @@ li{
     .instrucdiv{
 
         width: 180% ;
+    }
+    #logoutbutton{
+
+        top: -17px;
+        left: 1%;
+        height: 25px;
+        width: 89px;
+    }
+    .profilepic{
+
+        position: relative;
+        border-radius: 50px;
+        width: 30px;
+        border: 2px solid white;
+        top: 16px;
+        margin-left: 2%;
+    }
+    #userdetails{
+
+        position: relative;
+        text-align: end;
+        margin-right: 3%;
+        top: 1px;
+        font-size: initial;
+    }
+    #loginbutton{
+
+        left: 9%;
+        top: 30px;
+    }
+    #loggedout{
+
+        top: 0px;
     }
 
 }
